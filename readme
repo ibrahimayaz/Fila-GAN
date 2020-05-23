@@ -1,0 +1,24 @@
+Our code has been tested on Tensorflow 0.11.0rc1, python2.7
+
+To run this code, you need to prepare the training data yourself first.
+In our code, there are some files which need to be prepared. But you can also change the data as any format as you want.
+
+
+** img.npy & label.npy & mask.npy
+This is the training data includes the matrices of images, masks, vessel ground-truths respectively. The sizes of these matrices are following the size of placeholder accordingly. For example, the size of image matrix is N * img_size * img_size * 3 and of mask matrix is N * img_size * img_size * 1.
+
+The value of all these 4 metrices is between 0 and 1.
+
+
+** test_1To4.mat.mat
+This is the test sample for generating images. The data structure is the same as the .npy file but in .mat format.
+
+
+** trn20+tst20.mat 
+This is the file used to save the style images. It contains the color retinal images whose size is the same as the training images (i.e. Ns * img_size * img_size * 3)
+
+
+** imagenet-vgg-verydeep-19.mat
+This is the vgg-19 network weights, which can be downloaded from http://www.vlfeat.org/matconvnet/models/beta16/imagenet-vgg-verydeep-19.mat
+
+More details could be found in the paper.

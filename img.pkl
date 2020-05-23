@@ -1,0 +1,6 @@
+(lp1
+(S'syn_data/drive/img.npy'
+p2
+S'syn_data/drive/label.npy'
+tp3
+a.
